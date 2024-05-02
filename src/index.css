@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-imported {
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.custom-input{
+    @apply placeholder:text-gray-200 w-[70%] bg-theme-200 rounded-2xl p-3; 
+}
+
+.custom-button{
+    @apply bg-black text-gray-200 p-2 w-[30%] rounded-2xl;
+    transition: all 100ms ease;
+}
+
+.custom-button:hover{
+    color: white;
+    width: 31%; 
+}
+
+.custom-button:active{
+    width: 30%; 
+}
+
+.custom-select:disabled{
+    @apply text-gray-200;
+}
+
+.custom-ul{
+    background-color: rgba(0,0,0,.4);
+    overflow-y: scroll;
+}
+
+.custom-ul::-webkit-scrollbar{
+    width: 15px;
+    background-color: rgba(0,0,0,.4);
+}
+
+.custom-ul::-webkit-scrollbar-thumb{
+    background-color: rgba(0,0,0,.4);
+}
